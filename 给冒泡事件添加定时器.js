@@ -1,0 +1,13 @@
+$(clickMe).on('click',function(){
+    $(popover).show()
+    //
+    setTimeout(function(){
+        $(document).one('click',function(){
+             console.log('我觉得这里不会执行')
+             $(popover).hide()
+    })
+},0)
+})
+$(document).on('click',function(){
+    console.log('click事件走到了document')
+})
