@@ -11,3 +11,8 @@ $(clickMe).on('click',function(){
 $(document).on('click',function(){
     console.log('click事件走到了document')
 })
+//添加定时器后第一次点击，里面的代码不会执行，第二次点击的时候定时器的内容才会执行，
+//1.$(popover).show()
+//2.console.log('click事件走到了document')
+//3.此时click事件已经走完了，冒泡阶段已经走完了，所以定时器的内容不会执行
+//4.第二次点击的时候，先执行定时器的代码

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>彩虹圈</title>
+    <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    .red.active{background:red;}
+    .green.active{background:green;}
+    .orange.active{background:orange;}
+    .yellow.active{background:yellow;}
+    .purple.active{background:purple;}
+    .red{height: 100vh;width:100vw;}
+    div{border:1px solid black;
+     padding:10px;transition:all 1s;
+     border-radius:50%;display: flex;flex:1;}
+    </style>
+</head>
+<body>
+    <div class="red">
+        <div class="green">
+            <div class="yellow">
+                <div class="orange">
+                    <div class="purple">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    var n=0
+    $('div').on('click',function(e){
+        setTimeout(function(){ 
+            $(e.currentTarget).addClass('active')},n*1000)
+         n+=1
+    })
+    </script>
+   
+</body>
+</html>

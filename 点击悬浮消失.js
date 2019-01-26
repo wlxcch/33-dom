@@ -14,6 +14,6 @@ document.addEventListener('click',function(){
     popover.style.display='none'
 })
 wrapper.addEventListener("click",function(e){
-        //阻止默认事件
+        //阻止默认事件，stopPropagation停止传播的意思
     e.stopPropagation()
 })
