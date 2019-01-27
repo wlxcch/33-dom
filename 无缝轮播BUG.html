@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝轮播</title>
+    <style>
+        *{padding: 0;margin:0;}
+        *{box-sizing:border-box;}
+        .window{
+            width:300px;
+            height:200px;
+            overflow: hidden;
+            margin:20px auto;
+        }
+        .images{
+            display: flex ;
+        }
+        .images>img{width:100%;}
+    </style>
+</head>
+<body>
+    <div class='window'>
+        <div id="slides" class='images'>
+             <img src="./img/1.jpg" alt="1" >
+             <img src="./img/2.jpg" alt="2" >
+             <img src="./img/3.jpg" alt="3" >
+             <img src="./img/4.jpg" alt="4" >
+             <img src="./img/5.jpg" alt="5">
+        </div>
+    </div>
+    <div id="buttonWrapper" style="text-align:center">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+    </div>
+    在用户不看页面的时候，在中心回面的时候轮播会乱序，选择暂停播放这时解决BUG
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./无缝轮播BUG.js"></script>
+</body>
+</html>
