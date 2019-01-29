@@ -16,28 +16,44 @@
         }
         .images{
             display: flex ;
+            transition: all 0.3s;
         }
         .images>img{width:100%;}
     </style>
 </head>
 <body>
-    <div class='window'>
-        <div id="slides" class='images'>
-             <img src="./img/1.jpg" alt="1" >
-             <img src="./img/2.jpg" alt="2" >
-             <img src="./img/3.jpg" alt="3" >
-             <img src="./img/4.jpg" alt="4" >
-             <img src="./img/5.jpg" alt="5">
-        </div>
-    </div>
-    <div id="buttonWrapper" style="text-align:center">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-    </div>
-    在用户不看页面的时候，在中心回面的时候轮播会乱序，选择暂停播放这时解决BUG
+<div class="container">
+        <div class='window'>
+                <div id="slides" class='images'>
+                     <img src="./img/1.jpg" alt="1" >
+                     <img src="./img/2.jpg" alt="2" >
+                     <img src="./img/3.jpg" alt="3" >
+                     <img src="./img/4.jpg" alt="4" >
+                     <img src="./img/5.jpg" alt="5">
+                </div>
+            </div>
+            <div id="control" style="text-align:center;margin-bottom: 10px">
+                    <button id="previours">上一张</button>
+                    <button id="next">下一张</button>
+            </div>
+            <div id="buttonWrapper" style="text-align:center">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </div>
+            
+</div>
+<p style="text-align:left">
+    1.在用户不看页面的时候，在中心回面的时候轮播会乱序，选择暂停播放这时解决BUG.
+    <br>
+    2.添加自动播放，加定时器
+    <br>
+    3.鼠标进入停止，鼠标移除继续播放。恢复定时器
+    <br>
+    4.优化代码，
+</p>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./无缝轮播BUG.js"></script>
 </body>
