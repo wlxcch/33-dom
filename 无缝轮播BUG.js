@@ -12,6 +12,9 @@ bindEvents()
 $('#next').on('click',function(){
     goToSlides(current+1)
 })
+$('#previours').on('click',function(){
+    goToSlides(current-1)
+})
 
 let timer=setInterval(function(){
     goToSlides(current+1)

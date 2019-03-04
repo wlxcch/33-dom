@@ -1,14 +1,14 @@
-$(clickMe).on('click',function(){
+$(clickMe).on(`click`,function(){
     $(popover).show()
     //
     setTimeout(function(){
-        $(document).one('click',function(){
-             console.log('我觉得这里不会执行')
+        $(document).one(`click`,function(){
+             console.log(`我觉得这里不会执行`)
              $(popover).hide()
     })
 },0)
 })
-$(document).on('click',function(){
+$(document).on(`click`,function(){
     console.log('click事件走到了document')
 })
 //添加定时器后第一次点击，里面的代码不会执行，第二次点击的时候定时器的内容才会执行，

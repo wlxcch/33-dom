@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>点击别处悬浮框消失</title>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./给冒泡事件添加定时器.js"></script>
     <style>
         body{border:1px solid red;}
        .wrapper{
@@ -54,5 +54,4 @@
         </div>
     </div>
 </body>
-<script src="./给冒泡事件添加定时器.js"></script>
 </html>
